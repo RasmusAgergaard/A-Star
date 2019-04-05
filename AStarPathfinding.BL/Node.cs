@@ -15,7 +15,7 @@ namespace AStarPathfinding.BL
         public bool IsWalkable { get; set; }
         public float G { get; private set; }
         public float H { get; private set; }
-        public float F { get { return this.G + this.H; } }
+        public float F { get { return G + H; } }
         public nodeState State { get; set; }
         public Node ParentNode { get; set; }
 
